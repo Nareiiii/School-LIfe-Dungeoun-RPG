@@ -1,0 +1,7 @@
+{
+  "name": "School-Life RPG (Co-op Study Dungeon)",
+  "description": "Aplikasi manajemen fokus belajar kelompok (Co-op Study Dungeon) berbasis RPG. Hadapi Boss Distraksi bersama teman sekelas dengan sistem Pomodoro, Team Shield, dan Metacognitive Checkpoint.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
