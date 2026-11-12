@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Healer Gradients -->
+    <linearGradient id="healerGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <linearGradient id="healerWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#ECFDF5"/>
+      <stop offset="100%" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <linearGradient id="healerGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <radialGradient id="healGlowOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A7F3D0"/>
+      <stop offset="50%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </radialGradient>
+    <filter id="healSparkle" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow on floor -->
+  <ellipse cx="128" cy="242" rx="55" ry="10" fill="#020617" opacity="0.6" />
+
+  <!-- Radiance Aura Ring (Healer's Blessing) -->
+  <circle cx="128" cy="130" r="85" fill="none" stroke="#6EE7B7" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.4" />
+  <!-- Floating Green Petals / Hearts -->
+  <path d="M 52 145 C 52 138 42 138 42 145 C 42 152 52 158 52 158 C 52 158 62 152 62 145 C 62 138 52 138 52 145 Z" fill="#34D399" opacity="0.75" filter="url(#healSparkle)" />
+  <path d="M 212 170 C 212 165 204 165 204 170 C 204 176 212 181 212 181 C 212 181 220 176 220 170 C 220 165 212 165 212 170 Z" fill="#34D399" opacity="0.75" filter="url(#healSparkle)" />
+
+  <!-- FLOWING EMERALD PRIESTESS ROBE -->
+  <!-- Outer Green Capelet & Skirt -->
+  <path d="M 92 125 Q 128 120 164 125 L 184 235 Q 128 245 72 235 Z" fill="url(#healerGreen)" stroke="#064E3B" stroke-width="3.5" />
+  <!-- White Pure Front Tabard -->
+  <path d="M 108 125 L 148 125 L 144 238 L 112 238 Z" fill="url(#healerWhite)" stroke="#059669" stroke-width="2" />
+  <!-- Golden Clover Crest on Tabard -->
+  <g transform="translate(128, 160) scale(0.9)">
+    <circle cx="-6" cy="-6" r="6" fill="url(#healerGold)" />
+    <circle cx="6" cy="-6" r="6" fill="url(#healerGold)" />
+    <circle cx="0" cy="4" r="6" fill="url(#healerGold)" />
+    <path d="M 0 5 L 0 16" stroke="url(#healerGold)" stroke-width="2" />
+  </g>
+
+  <!-- Golden Leaf Belt with Potion Vials -->
+  <rect x="94" y="142" width="68" height="8" rx="2" fill="url(#healerGold)" stroke="#78350F" stroke-width="1.5" />
+  <!-- Potion vial hanging on belt -->
+  <path d="M 148 150 L 158 150 L 160 165 C 160 170 146 170 146 165 Z" fill="#0D9488" stroke="#047857" stroke-width="1.5" />
+  <circle cx="153" cy="160" r="2.5" fill="#A7F3D0" />
+  <rect x="150" y="147" width="6" height="3" fill="#B45309" />
+
+  <!-- Flowing Chestnut/Emerald Silken Hair (Back) -->
+  <path d="M 82 85 C 65 110 65 170 78 205 C 88 175 92 135 94 105 Z" fill="#065F46" stroke="#022C22" stroke-width="2.5" />
+  <path d="M 174 85 C 191 110 191 170 178 205 C 168 175 164 135 162 105 Z" fill="#065F46" stroke="#022C22" stroke-width="2.5" />
+
+  <!-- LEFT HAND (Raised in Blessing & Moral Boost) -->
+  <g>
+    <!-- Arm in white priestess sleeve with wide green cuff -->
+    <path d="M 94 130 Q 65 135 55 115" stroke="url(#healerGreen)" stroke-width="14" stroke-linecap="round" />
+    <circle cx="53" cy="113" r="6" fill="#FEF3C7" />
+    
+    <!-- Holy Aura from palm -->
+    <circle cx="50" cy="110" r="14" fill="#34D399" opacity="0.3" filter="url(#healSparkle)" />
+    <!-- Mini green healing heart above hand -->
+    <path d="M 48 96 C 48 91 40 91 40 96 C 40 102 48 107 48 107 C 48 107 56 102 56 96 C 56 91 48 91 48 96 Z" fill="#10B981" filter="url(#healSparkle)" />
+  </g>
+
+  <!-- RIGHT HAND & HEALING CLOVER STAFF -->
+  <g>
+    <!-- Right Arm -->
+    <path d="M 162 130 Q 185 140 195 160" stroke="url(#healerGreen)" stroke-width="14" stroke-linecap="round" />
+    <circle cx="196" cy="162" r="6" fill="#FEF3C7" />
+
+    <!-- Staff Wooden Stem (Ivory & Gold) -->
+    <line x1="202" y1="235" x2="216" y2="65" stroke="#D1D5DB" stroke-width="6" stroke-linecap="round" />
+    <line x1="202" y1="235" x2="216" y2="65" stroke="url(#healerGold)" stroke-width="2" stroke-dasharray="10 15" />
+
+    <!-- Golden Tree Vine Crescent / Wings Top Mount -->
+    <path d="M 200 75 C 195 40 238 35 230 75 C 220 55 205 60 200 75 Z" fill="url(#healerGold)" stroke="#78350F" stroke-width="2" />
+    <path d="M 215 88 C 210 68 232 62 225 84" stroke="url(#healerGold)" stroke-width="3" fill="none" />
+
+    <!-- Radiant Emerald Healing Orb -->
+    <circle cx="216" cy="60" r="15" fill="url(#healGlowOrb)" stroke="#FFFFFF" stroke-width="2.5" filter="url(#healSparkle)" />
+    <circle cx="212" cy="56" r="4.5" fill="#FFFFFF" />
+
+    <!-- Tiny Leaves sprouting from Staff -->
+    <path d="M 210 95 Q 198 90 202 82 Q 212 85 210 95 Z" fill="#34D399" stroke="#065F46" stroke-width="1.5" />
+    <path d="M 218 115 Q 230 110 226 102 Q 216 105 218 115 Z" fill="#34D399" stroke="#065F46" stroke-width="1.5" />
+  </g>
+
+  <!-- CHIBI HEALER HEAD & FACE -->
+  <!-- Face Contour -->
+  <path d="M 96 85 Q 86 128 128 132 Q 170 128 160 85 Z" fill="#FEF3C7" stroke="#0F172A" stroke-width="3" />
+
+  <!-- Gentle anime eyes with emerald green iris -->
+  <!-- Left Eye -->
+  <ellipse cx="112" cy="104" rx="8" ry="10" fill="#047857" />
+  <circle cx="112" cy="103" r="6" fill="#10B981" />
+  <circle cx="112" cy="105" r="4" fill="#064E3B" />
+  <circle cx="110" cy="100" r="3" fill="#FFFFFF" />
+  <circle cx="114" cy="107" r="1.5" fill="#FFFFFF" />
+  <!-- Gentle curved eyebrow -->
+  <path d="M 104 95 Q 112 92 120 96" stroke="#065F46" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+  <!-- Right Eye -->
+  <ellipse cx="144" cy="104" rx="8" ry="10" fill="#047857" />
+  <circle cx="144" cy="103" r="6" fill="#10B981" />
+  <circle cx="144" cy="105" r="4" fill="#064E3B" />
+  <circle cx="142" cy="100" r="3" fill="#FFFFFF" />
+  <circle cx="146" cy="107" r="1.5" fill="#FFFFFF" />
+  <!-- Gentle curved eyebrow -->
+  <path d="M 136 96 Q 144 92 152 95" stroke="#065F46" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+  <!-- Warm Smile & Rosy Blushes -->
+  <path d="M 124 118 Q 128 122 132 118" stroke="#B45309" stroke-width="2" fill="none" stroke-linecap="round" />
+  <ellipse cx="102" cy="114" rx="5" ry="2.5" fill="#F472B6" opacity="0.75" />
+  <ellipse cx="154" cy="114" rx="5" ry="2.5" fill="#F472B6" opacity="0.75" />
+
+  <!-- Silken Hair Bangs -->
+  <path d="M 94 88 C 105 102 116 100 120 88 C 128 102 140 102 148 88 C 156 96 160 94 162 86 Z" fill="#047857" stroke="#022C22" stroke-width="2" />
+
+  <!-- LAUREL / FLOWER CROWN & CLERIC HEADDRESS -->
+  <g>
+    <!-- White Veil Headband -->
+    <path d="M 88 78 Q 128 68 168 78 L 165 65 Q 128 55 91 65 Z" fill="url(#healerWhite)" stroke="#065F46" stroke-width="2" />
+    
+    <!-- Golden Leaf Diadem / Tiara -->
+    <path d="M 96 74 Q 128 66 160 74" stroke="url(#healerGold)" stroke-width="3" fill="none" />
+    <!-- Center Emerald Gem -->
+    <polygon points="128,60 133,66 128,72 123,66" fill="#10B981" stroke="#064E3B" stroke-width="1.5" />
+    <circle cx="128" cy="66" r="2" fill="#FFFFFF" />
+
+    <!-- Laurel Leaves on Crown -->
+    <polygon points="112,68 116,63 118,68 114,71" fill="#34D399" />
+    <polygon points="144,68 140,63 138,68 142,71" fill="#34D399" />
+    <polygon points="102,72 105,67 108,71 105,74" fill="#34D399" />
+    <polygon points="154,72 151,67 148,71 151,74" fill="#34D399" />
+  </g>
+
+  <!-- Soft Healing Sparkles -->
+  <polygon points="216,36 218,40 223,41 219,44 220,49 216,46 212,49 213,44 209,41 214,40" fill="#FFFFFF" />
+  <circle cx="236" cy="68" r="3" fill="#6EE7B7" filter="url(#healSparkle)" />
+  <circle cx="196" cy="50" r="2" fill="#FDE047" />
+</svg>

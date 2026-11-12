@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Mage Gradients -->
+    <linearGradient id="robePurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="50%" stop-color="#6B21A8"/>
+      <stop offset="100%" stop-color="#3B0764"/>
+    </linearGradient>
+    <linearGradient id="hatIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#3730A3"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="magicOrb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="40%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#7E22CE"/>
+    </linearGradient>
+    <linearGradient id="mageGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+    <filter id="mageGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow on dungeon floor -->
+  <ellipse cx="128" cy="242" rx="55" ry="10" fill="#020617" opacity="0.6" />
+
+  <!-- MAGIC AURA PARTICLES (Floating in background) -->
+  <circle cx="218" cy="65" r="28" fill="url(#magicOrb)" opacity="0.25" filter="url(#mageGlow)" />
+  <circle cx="58" cy="180" r="16" fill="url(#magicOrb)" opacity="0.2" filter="url(#mageGlow)" />
+
+  <!-- MAGE ROBE (Flowing Mystical Gown) -->
+  <path d="M 94 130 Q 128 125 162 130 L 180 235 Q 128 245 76 235 Z" fill="url(#robePurple)" stroke="#1E1B4B" stroke-width="3.5" />
+  <!-- Under-robe / Inner Vestment -->
+  <path d="M 112 130 L 128 238 L 144 130 Z" fill="#312E81" />
+  <!-- Gold Rune Embroidered Border -->
+  <path d="M 76 226 Q 128 236 180 226 L 180 235 Q 128 245 76 235 Z" fill="url(#mageGold)" stroke="#78350F" stroke-width="1.5" />
+
+  <!-- Flowing Silver/Lilac Hair (Behind shoulders) -->
+  <path d="M 86 95 C 70 120 72 165 82 195 C 92 165 96 125 98 105 Z" fill="#E0E7FF" stroke="#6366F1" stroke-width="2" />
+  <path d="M 170 95 C 186 120 184 165 174 195 C 164 165 160 125 158 105 Z" fill="#E0E7FF" stroke="#6366F1" stroke-width="2" />
+
+  <!-- LEFT HAND & GRIMOIRE (Spellbook of Metacognition) -->
+  <g>
+    <!-- Left Arm -->
+    <path d="M 94 135 Q 70 150 62 170" stroke="url(#robePurple)" stroke-width="14" stroke-linecap="round" />
+    <circle cx="62" cy="172" r="6" fill="#FDE68A" />
+    
+    <!-- Open Book (Grimoire) -->
+    <!-- Cover -->
+    <path d="M 32 160 Q 62 172 62 196 Q 32 186 28 165 Z" fill="#831843" stroke="url(#mageGold)" stroke-width="2" />
+    <path d="M 92 160 Q 62 172 62 196 Q 92 186 96 165 Z" fill="#831843" stroke="url(#mageGold)" stroke-width="2" />
+    <!-- Pages -->
+    <path d="M 35 162 Q 62 170 62 192 Q 35 182 32 166 Z" fill="#FFFBEB" stroke="#78350F" stroke-width="1.5" />
+    <path d="M 89 162 Q 62 170 62 192 Q 89 182 92 166 Z" fill="#FFFBEB" stroke="#78350F" stroke-width="1.5" />
+    <!-- Magic runes on page -->
+    <line x1="40" y1="172" x2="56" y2="175" stroke="#9333EA" stroke-width="2" stroke-linecap="round" />
+    <line x1="42" y1="180" x2="54" y2="183" stroke="#9333EA" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="68" y1="175" x2="84" y2="172" stroke="#9333EA" stroke-width="2" stroke-linecap="round" />
+    <line x1="70" y1="183" x2="82" y2="180" stroke="#9333EA" stroke-width="1.5" stroke-linecap="round" />
+    <!-- Floating rune spark from book -->
+    <polygon points="62,152 64,157 69,158 65,162 66,167 62,164 58,167 59,162 55,158 60,157" fill="#F43F5E" filter="url(#mageGlow)" />
+  </g>
+
+  <!-- RIGHT HAND & MYSTICAL WAND / STAFF -->
+  <g>
+    <!-- Right Arm -->
+    <path d="M 162 135 Q 185 145 194 165" stroke="url(#robePurple)" stroke-width="14" stroke-linecap="round" />
+    <circle cx="196" cy="165" r="6" fill="#FDE68A" />
+
+    <!-- Staff Wooden Shaft -->
+    <line x1="202" y1="230" x2="218" y2="70" stroke="#78350F" stroke-width="6" stroke-linecap="round" />
+    <!-- Gold Staff Top Mount & Crescent -->
+    <path d="M 205 78 C 205 50 235 45 230 75 C 220 62 208 65 205 78 Z" fill="url(#mageGold)" stroke="#78350F" stroke-width="2" />
+    <path d="M 215 88 C 210 70 230 65 225 85" stroke="url(#mageGold)" stroke-width="3" fill="none" />
+    
+    <!-- Large Glowing Amethyst Orb -->
+    <circle cx="218" cy="65" r="14" fill="url(#magicOrb)" stroke="#FFFFFF" stroke-width="2" filter="url(#mageGlow)" />
+    <circle cx="214" cy="61" r="4" fill="#FFFFFF" />
+    <circle cx="218" cy="65" r="18" fill="none" stroke="#F472B6" stroke-width="1.5" opacity="0.6" stroke-dasharray="4 3" />
+  </g>
+
+  <!-- CHIBI MAGE FACE -->
+  <!-- Face Contour -->
+  <path d="M 96 90 Q 86 130 128 135 Q 170 130 160 90 Z" fill="#FEF3C7" stroke="#0F172A" stroke-width="3" />
+  
+  <!-- Anime Eyes (Big, Curious & Brilliant) -->
+  <!-- Left Eye -->
+  <ellipse cx="112" cy="108" rx="8" ry="11" fill="#4338CA" />
+  <circle cx="112" cy="107" r="6" fill="#818CF8" />
+  <circle cx="112" cy="109" r="4" fill="#0F172A" />
+  <circle cx="110" cy="104" r="3" fill="#FFFFFF" />
+  <circle cx="115" cy="112" r="1.5" fill="#FFFFFF" />
+  <!-- Eyelash -->
+  <path d="M 103 98 Q 112 95 121 100" stroke="#1E1B4B" stroke-width="3" fill="none" stroke-linecap="round" />
+
+  <!-- Right Eye -->
+  <ellipse cx="144" cy="108" rx="8" ry="11" fill="#4338CA" />
+  <circle cx="144" cy="107" r="6" fill="#818CF8" />
+  <circle cx="144" cy="109" r="4" fill="#0F172A" />
+  <circle cx="142" cy="104" r="3" fill="#FFFFFF" />
+  <circle cx="147" cy="112" r="1.5" fill="#FFFFFF" />
+  <!-- Eyelash -->
+  <path d="M 135 100 Q 144 95 153 98" stroke="#1E1B4B" stroke-width="3" fill="none" stroke-linecap="round" />
+
+  <!-- Cheerful Smile & Cute Blushes -->
+  <path d="M 124 122 Q 128 126 132 122" stroke="#B45309" stroke-width="2" fill="none" stroke-linecap="round" />
+  <ellipse cx="102" cy="118" rx="5" ry="2.5" fill="#FDA4AF" opacity="0.8" />
+  <ellipse cx="154" cy="118" rx="5" ry="2.5" fill="#FDA4AF" opacity="0.8" />
+
+  <!-- Bangs / Front Hair -->
+  <path d="M 94 92 C 105 105 118 102 122 92 C 128 106 142 104 150 92 C 158 100 162 96 164 90 Z" fill="#E0E7FF" stroke="#6366F1" stroke-width="2" />
+
+  <!-- TALL POINTED CROOKED WIZARD HAT -->
+  <g>
+    <!-- Hat Brim (Wide Oval) -->
+    <ellipse cx="128" cy="86" rx="66" ry="16" fill="url(#hatIndigo)" stroke="#1E1B4B" stroke-width="3.5" />
+    <ellipse cx="128" cy="85" rx="62" ry="13" fill="none" stroke="url(#mageGold)" stroke-width="1.5" />
+
+    <!-- Hat Cone (Tall & Slightly Crooked) -->
+    <path d="M 88 84 C 95 30 115 15 145 10 C 160 8 165 -5 175 5 C 168 18 140 32 152 55 L 168 84 Z" 
+          fill="url(#hatIndigo)" stroke="#1E1B4B" stroke-width="3.5" />
+    
+    <!-- Hat Gold Ribbon & Buckle -->
+    <path d="M 92 82 Q 128 92 164 82 L 162 72 Q 128 82 94 72 Z" fill="url(#mageGold)" stroke="#78350F" stroke-width="2" />
+    <!-- Star Buckle -->
+    <polygon points="128,70 131,76 137,77 133,81 134,87 128,84 122,87 123,81 119,77 125,76" fill="#FEF08A" stroke="#78350F" stroke-width="1.5" />
+
+    <!-- Hanging Star Charm from Hat Tip -->
+    <line x1="175" y1="5" x2="182" y2="18" stroke="#FDE047" stroke-width="1.5" />
+    <polygon points="182,18 184,22 189,23 185,27 186,31 182,29 178,31 179,27 175,23 180,22" fill="#FDE047" filter="url(#mageGlow)" />
+  </g>
+
+  <!-- Celestial Magic Sparks around Wand -->
+  <polygon points="218,40 220,44 225,45 221,48 222,53 218,50 214,53 215,48 211,45 216,44" fill="#FFFFFF" />
+  <circle cx="238" cy="82" r="2.5" fill="#F472B6" />
+  <circle cx="200" cy="52" r="2" fill="#38BDF8" />
+</svg>

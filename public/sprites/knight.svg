@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Steel armor gradients -->
+    <linearGradient id="armorSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5F9"/>
+      <stop offset="35%" stop-color="#94A3B8"/>
+      <stop offset="70%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="armorGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+    <linearGradient id="capeBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="70%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="swordBlade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Flowing Royal Blue Cape (Background) -->
+  <path d="M 90 100 Q 50 150 45 220 Q 80 235 110 210 Q 120 150 120 120 Z" fill="url(#capeBlue)" stroke="#1E3A8A" stroke-width="3" />
+  <path d="M 166 100 Q 206 150 215 220 Q 180 235 150 210 Q 140 150 136 120 Z" fill="url(#capeBlue)" stroke="#1E3A8A" stroke-width="3" />
+
+  <!-- Shadow under character on dungeon floor -->
+  <ellipse cx="128" cy="242" rx="55" ry="10" fill="#020617" opacity="0.6" />
+
+  <!-- LEGS & SABATONS (Armored Boots) -->
+  <!-- Left Leg -->
+  <path d="M 98 175 L 90 230 L 115 235 L 118 175 Z" fill="url(#armorSteel)" stroke="#0F172A" stroke-width="3" />
+  <path d="M 85 225 L 118 225 L 118 238 L 80 238 Z" fill="#334155" stroke="#0F172A" stroke-width="2.5" />
+  <!-- Right Leg -->
+  <path d="M 138 175 L 138 235 L 163 230 L 158 175 Z" fill="url(#armorSteel)" stroke="#0F172A" stroke-width="3" />
+  <path d="M 138 225 L 171 225 L 176 238 L 138 238 Z" fill="#334155" stroke="#0F172A" stroke-width="2.5" />
+
+  <!-- TORSO & CHESTPLATE -->
+  <path d="M 90 110 Q 128 105 166 110 L 160 178 Q 128 185 96 178 Z" fill="url(#armorSteel)" stroke="#0F172A" stroke-width="3.5" />
+  <!-- Golden Cross on Chest -->
+  <path d="M 124 115 L 132 115 L 132 170 L 124 170 Z" fill="url(#armorGold)" />
+  <path d="M 106 132 L 150 132 L 150 140 L 106 140 Z" fill="url(#armorGold)" />
+  <!-- Gold Rivets & Belt -->
+  <rect x="94" y="168" width="68" height="10" rx="3" fill="url(#armorGold)" stroke="#78350F" stroke-width="1.5" />
+  <circle cx="128" cy="173" r="4" fill="#38BDF8" stroke="#0F172A" stroke-width="1.5" />
+
+  <!-- RIGHT ARM & BROADSWORD (Raised & Ready) -->
+  <g>
+    <!-- Upper arm -->
+    <path d="M 160 115 Q 185 110 195 130" stroke="url(#armorSteel)" stroke-width="16" stroke-linecap="round" />
+    <!-- Forearm & Gauntlet -->
+    <path d="M 190 125 L 205 105" stroke="url(#armorSteel)" stroke-width="14" stroke-linecap="round" />
+    
+    <!-- Gleaming Broadsword -->
+    <!-- Blade -->
+    <path d="M 205 105 L 242 35 Q 244 32 242 38 L 222 112 Z" fill="url(#swordBlade)" stroke="#334155" stroke-width="2" filter="url(#softGlow)" />
+    <!-- Blade Fuller/Center Ridge -->
+    <line x1="208" y1="102" x2="238" y2="40" stroke="#FFFFFF" stroke-width="1.5" />
+    <!-- Sword Crossguard -->
+    <path d="M 192 115 L 224 98" stroke="url(#armorGold)" stroke-width="7" stroke-linecap="round" />
+    <!-- Pommel & Grip -->
+    <path d="M 198 110 L 188 122" stroke="#78350F" stroke-width="5" stroke-linecap="round" />
+    <circle cx="186" cy="124" r="4" fill="url(#armorGold)" />
+  </g>
+
+  <!-- CHIBI KNIGHT HEAD & HELMET (Large & Cute) -->
+  <g>
+    <!-- Helmet Base -->
+    <path d="M 80 50 C 75 10 181 10 176 50 C 182 85 170 108 128 110 C 86 108 74 85 80 50 Z" 
+          fill="url(#armorSteel)" stroke="#0F172A" stroke-width="4" />
+    
+    <!-- Helmet Crown & Plume -->
+    <path d="M 120 18 C 110 -5 146 -5 136 18 Z" fill="url(#armorGold)" />
+    <!-- Royal Blue & Red Feathery Plume -->
+    <path d="M 128 15 C 105 -15 80 15 65 30 C 85 22 115 22 128 20 Z" fill="#2563EB" stroke="#1D4ED8" stroke-width="1.5" />
+    <path d="M 128 18 C 115 -5 95 18 85 32 C 100 24 120 24 128 22 Z" fill="#EF4444" />
+
+    <!-- Helmet Forehead Crest / Brow Guard -->
+    <path d="M 78 52 Q 128 42 178 52 L 175 66 Q 128 56 81 66 Z" fill="url(#armorGold)" stroke="#78350F" stroke-width="2" />
+
+    <!-- Visor Slit with Anime Hero Eyes -->
+    <rect x="85" y="62" width="86" height="26" rx="6" fill="#090D16" stroke="#475569" stroke-width="2" />
+    
+    <!-- Left Hero Eye -->
+    <ellipse cx="108" cy="74" rx="9" ry="7" fill="#38BDF8" />
+    <circle cx="108" cy="74" r="5" fill="#0F172A" />
+    <circle cx="105" cy="71" r="2.5" fill="#FFFFFF" />
+    <!-- Right Hero Eye -->
+    <ellipse cx="148" cy="74" rx="9" ry="7" fill="#38BDF8" />
+    <circle cx="148" cy="74" r="5" fill="#0F172A" />
+    <circle cx="145" cy="71" r="2.5" fill="#FFFFFF" />
+
+    <!-- Helmet Cheek Guards & Vent Slits -->
+    <path d="M 90 88 L 128 106 L 166 88 L 162 104 Q 128 114 94 104 Z" fill="url(#armorSteel)" stroke="#0F172A" stroke-width="2.5" />
+    <line x1="116" y1="94" x2="116" y2="102" stroke="#334155" stroke-width="2" />
+    <line x1="124" y1="96" x2="124" y2="104" stroke="#334155" stroke-width="2" />
+    <line x1="132" y1="96" x2="132" y2="104" stroke="#334155" stroke-width="2" />
+    <line x1="140" y1="94" x2="140" y2="102" stroke="#334155" stroke-width="2" />
+  </g>
+
+  <!-- LEFT ARM & MIGHTY KITE SHIELD (Front & Center) -->
+  <g>
+    <!-- Shield Outer Shell -->
+    <path d="M 28 95 Q 75 85 85 105 Q 85 175 48 215 Q 16 175 20 105 Z" 
+          fill="url(#capeBlue)" stroke="url(#armorGold)" stroke-width="4.5" filter="url(#softGlow)" />
+    
+    <!-- Shield Inner Steel Rim -->
+    <path d="M 33 103 Q 70 95 78 110 Q 78 168 48 202 Q 24 168 27 110 Z" 
+          fill="#1E293B" stroke="#60A5FA" stroke-width="2" />
+
+    <!-- Lion / Focus Sun Emblem on Shield -->
+    <circle cx="52" cy="142" r="16" fill="url(#armorGold)" stroke="#78350F" stroke-width="1.5" />
+    <!-- Sunburst points -->
+    <polygon points="52,120 55,126 49,126" fill="#FDE047" />
+    <polygon points="52,164 55,158 49,158" fill="#FDE047" />
+    <polygon points="30,142 36,145 36,139" fill="#FDE047" />
+    <polygon points="74,142 68,145 68,139" fill="#FDE047" />
+    <polygon points="36,126 42,130 40,124" fill="#FDE047" />
+    <polygon points="68,158 62,154 64,160" fill="#FDE047" />
+    <polygon points="68,126 64,131 62,125" fill="#FDE047" />
+    <polygon points="36,158 40,153 42,159" fill="#FDE047" />
+    <circle cx="52" cy="142" r="7" fill="#38BDF8" stroke="#FFFFFF" stroke-width="1.5" />
+
+    <!-- Steel Rivets on shield border -->
+    <circle cx="28" cy="105" r="2" fill="#E2E8F0" />
+    <circle cx="52" cy="94" r="2" fill="#E2E8F0" />
+    <circle cx="78" cy="105" r="2" fill="#E2E8F0" />
+    <circle cx="76" cy="150" r="2" fill="#E2E8F0" />
+    <circle cx="48" cy="206" r="2" fill="#E2E8F0" />
+    <circle cx="23" cy="150" r="2" fill="#E2E8F0" />
+
+    <!-- Armored Hand holding shield -->
+    <rect x="74" y="128" width="14" height="18" rx="4" fill="url(#armorSteel)" stroke="#0F172A" stroke-width="2" />
+  </g>
+
+  <!-- Sparkles on sword & shield -->
+  <polygon points="240,32 243,38 249,39 244,43 245,49 240,45 235,49 236,43 231,39 237,38" fill="#FFFFFF" />
+  <polygon points="52,90 54,94 58,95 55,98 56,102 52,99 48,102 49,98 46,95 50,94" fill="#FEF08A" />
+</svg>

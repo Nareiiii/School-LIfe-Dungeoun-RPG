@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <!-- Ranger Gradients -->
+    <linearGradient id="rangerLeather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#78350F"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <linearGradient id="rangerCloak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <linearGradient id="rangerGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+    <linearGradient id="bowWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <filter id="windGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Shadow on floor -->
+  <ellipse cx="128" cy="242" rx="55" ry="10" fill="#020617" opacity="0.6" />
+
+  <!-- QUIVER WITH ARROWS (Peeking over right shoulder behind cloak) -->
+  <g>
+    <!-- Quiver body -->
+    <path d="M 160 85 L 180 75 L 165 140 L 145 145 Z" fill="url(#rangerLeather)" stroke="#451A03" stroke-width="2" />
+    <!-- Arrow Shafts & Fletchings -->
+    <!-- Arrow 1 -->
+    <line x1="168" y1="80" x2="182" y2="40" stroke="#78350F" stroke-width="3" />
+    <polygon points="182,40 188,32 186,45 178,48" fill="#FDE047" stroke="#78350F" stroke-width="1.5" />
+    <!-- Arrow 2 -->
+    <line x1="174" y1="78" x2="195" y2="45" stroke="#78350F" stroke-width="3" />
+    <polygon points="195,45 202,38 198,52 190,52" fill="#10B981" stroke="#064E3B" stroke-width="1.5" />
+    <!-- Arrow 3 -->
+    <line x1="162" y1="84" x2="172" y2="50" stroke="#78350F" stroke-width="3" />
+    <polygon points="172,50 178,44 175,56 168,57" fill="#FDE047" stroke="#78350F" stroke-width="1.5" />
+  </g>
+
+  <!-- Flowing Forest Green Scout Cloak (Behind body) -->
+  <path d="M 88 115 Q 52 165 48 230 Q 82 240 115 215 Q 118 165 120 125 Z" fill="url(#rangerCloak)" stroke="#064E3B" stroke-width="3" />
+  <path d="M 168 115 Q 204 165 210 230 Q 176 240 145 215 Q 142 165 136 125 Z" fill="url(#rangerCloak)" stroke="#064E3B" stroke-width="3" />
+
+  <!-- LEGS & SCOUT BOOTS -->
+  <!-- Left Leg -->
+  <path d="M 98 178 L 92 232 L 115 236 L 116 178 Z" fill="#334155" stroke="#0F172A" stroke-width="2.5" />
+  <path d="M 88 226 L 116 226 L 116 238 L 84 238 Z" fill="url(#rangerLeather)" stroke="#451A03" stroke-width="2" />
+  <!-- Right Leg -->
+  <path d="M 140 178 L 140 236 L 164 232 L 158 178 Z" fill="#334155" stroke="#0F172A" stroke-width="2.5" />
+  <path d="M 140 226 L 168 226 L 172 238 L 140 238 Z" fill="url(#rangerLeather)" stroke="#451A03" stroke-width="2" />
+
+  <!-- TORSO: LEATHER JERKIN & SCOUT BELT -->
+  <path d="M 92 115 Q 128 110 164 115 L 158 182 Q 128 188 98 182 Z" fill="url(#rangerLeather)" stroke="#451A03" stroke-width="3" />
+  <!-- Cross Chest Harness Straps -->
+  <line x1="98" y1="120" x2="155" y2="175" stroke="#451A03" stroke-width="4" />
+  <line x1="98" y1="120" x2="155" y2="175" stroke="url(#rangerGold)" stroke-width="1.5" />
+  <!-- Gold Belt with Dagger Sheath -->
+  <rect x="94" y="172" width="68" height="9" rx="2" fill="url(#rangerGold)" stroke="#78350F" stroke-width="1.5" />
+  <!-- Hunting Dagger on hip -->
+  <path d="M 154 175 L 166 175 L 160 198 Z" fill="#94A3B8" stroke="#334155" stroke-width="1.5" />
+  <path d="M 152 173 L 168 173" stroke="url(#rangerGold)" stroke-width="2.5" />
+
+  <!-- RIGHT ARM & DRAWN ARROW / DAGGER -->
+  <g>
+    <!-- Right Arm -->
+    <path d="M 162 120 Q 185 130 195 145" stroke="url(#rangerCloak)" stroke-width="13" stroke-linecap="round" />
+    <circle cx="196" cy="147" r="6" fill="#FDE68A" />
+    <!-- Feathered Scout Wrist Brace -->
+    <rect x="180" y="132" width="12" height="14" rx="2" fill="url(#rangerLeather)" stroke="#451A03" stroke-width="1.5" />
+  </g>
+
+  <!-- LEFT ARM & RECURVE LONGBOW (Front Action Stance) -->
+  <g>
+    <!-- Left Arm holding the bow -->
+    <path d="M 94 125 Q 65 135 48 145" stroke="url(#rangerCloak)" stroke-width="13" stroke-linecap="round" />
+    <circle cx="46" cy="147" r="6" fill="#FDE68A" />
+    
+    <!-- Recurve Longbow (Curved wood with gold reinforced tips) -->
+    <path d="M 52 55 Q 12 110 35 150 Q 15 195 55 235" fill="none" stroke="url(#bowWood)" stroke-width="6" stroke-linecap="round" />
+    <!-- Bow string -->
+    <line x1="52" y1="58" x2="46" y2="147" stroke="#F8FAFC" stroke-width="1.5" opacity="0.85" />
+    <line x1="46" y1="147" x2="55" y2="232" stroke="#F8FAFC" stroke-width="1.5" opacity="0.85" />
+    <!-- Gold Tip Caps -->
+    <polygon points="52,55 58,60 50,65" fill="url(#rangerGold)" />
+    <polygon points="55,235 61,230 53,225" fill="url(#rangerGold)" />
+
+    <!-- Nocked Glowing Wind Arrow -->
+    <line x1="44" y1="147" x2="16" y2="147" stroke="#38BDF8" stroke-width="3" filter="url(#windGlow)" />
+    <!-- Arrowhead Pointing up towards the Boss! -->
+    <polygon points="16,147 24,142 22,147 24,152" fill="#FDE047" stroke="#B45309" stroke-width="1" />
+  </g>
+
+  <!-- CHIBI RANGER HEAD & FACE -->
+  <!-- Face Contour -->
+  <path d="M 96 85 Q 86 128 128 132 Q 170 128 160 85 Z" fill="#FEF3C7" stroke="#0F172A" stroke-width="3" />
+
+  <!-- Sharp Keen Archer Eyes with Amber / Topaz Iris -->
+  <!-- Left Eye -->
+  <ellipse cx="112" cy="104" rx="8" ry="9" fill="#B45309" />
+  <circle cx="112" cy="103" r="5.5" fill="#F59E0B" />
+  <circle cx="112" cy="105" r="3.5" fill="#451A03" />
+  <circle cx="110" cy="100" r="2.5" fill="#FFFFFF" />
+  <!-- Confident curved eyebrow -->
+  <path d="M 103 93 L 122 97" stroke="#451A03" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Right Eye (Winking / Aiming eye with keen gaze) -->
+  <ellipse cx="144" cy="104" rx="8" ry="9" fill="#B45309" />
+  <circle cx="144" cy="103" r="5.5" fill="#F59E0B" />
+  <circle cx="144" cy="105" r="3.5" fill="#451A03" />
+  <circle cx="142" cy="100" r="2.5" fill="#FFFFFF" />
+  <!-- Confident curved eyebrow -->
+  <path d="M 135 97 L 153 93" stroke="#451A03" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Confident Hero Smirk -->
+  <path d="M 124 118 Q 130 123 136 116" stroke="#78350F" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <!-- Subtle cheek blush -->
+  <ellipse cx="102" cy="114" rx="4" ry="2" fill="#FCA5A5" opacity="0.6" />
+  <ellipse cx="154" cy="114" rx="4" ry="2" fill="#FCA5A5" opacity="0.6" />
+
+  <!-- Dark Chestnut Spiky Bangs -->
+  <path d="M 94 88 C 105 98 112 95 118 86 C 124 98 135 98 144 86 C 152 94 158 92 162 86 Z" fill="#451A03" stroke="#1E1B4B" stroke-width="2" />
+
+  <!-- HUNTER'S FEATHERED HOOD -->
+  <g>
+    <!-- Hood Shell -->
+    <path d="M 80 82 C 72 35 115 15 128 15 C 141 15 184 35 176 82 C 160 88 145 84 128 84 C 111 84 96 88 80 82 Z" 
+          fill="url(#rangerCloak)" stroke="#064E3B" stroke-width="3.5" />
+    
+    <!-- Hood Forehead Rim with Gold Stitching -->
+    <path d="M 85 78 Q 128 70 171 78" stroke="url(#rangerGold)" stroke-width="2" fill="none" />
+
+    <!-- Striking Archer Hawk Feather on Hood -->
+    <path d="M 155 35 C 175 10 205 15 215 2 C 205 25 180 32 165 42 Z" fill="#FDE047" stroke="#B45309" stroke-width="2" />
+    <path d="M 165 38 C 180 20 200 22 208 12 C 198 30 182 34 172 40 Z" fill="#EF4444" />
+    <line x1="155" y1="35" x2="215" y2="2" stroke="#78350F" stroke-width="1.5" />
+  </g>
+
+  <!-- Wind Speed Buff Sparks around Arrow -->
+  <circle cx="28" cy="135" r="2.5" fill="#38BDF8" filter="url(#windGlow)" />
+  <circle cx="15" cy="160" r="2" fill="#FDE047" />
+  <circle cx="62" cy="140" r="2" fill="#38BDF8" />
+</svg>

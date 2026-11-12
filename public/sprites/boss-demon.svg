@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gradients for Boss Demon Dragon -->
+    <radialGradient id="bossCoreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF4D4D" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3B0764" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bossSkinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="50%" stop-color="#7F1D1D"/>
+      <stop offset="100%" stop-color="#450A0A"/>
+    </linearGradient>
+    <linearGradient id="bossWingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="50%" stop-color="#4C1D95"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="bossHornGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="30%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <linearGradient id="bossArmorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="fieryGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Outer Flame Aura (Transparent BG) -->
+  <circle cx="256" cy="270" r="210" fill="url(#bossCoreGlow)" />
+
+  <!-- DEMONIC WINGS (Left & Right) -->
+  <!-- Left Wing -->
+  <g>
+    <!-- Wing Bones -->
+    <path d="M 230 200 C 170 120 90 70 20 120 C 10 140 30 180 50 190 C 20 210 20 250 40 270 C 20 300 40 330 80 340 C 130 330 190 280 230 250 Z" 
+          fill="url(#bossWingGrad)" stroke="#1E1B4B" stroke-width="4" />
+    <path d="M 220 190 Q 140 100 20 120" stroke="#7E22CE" stroke-width="8" stroke-linecap="round" />
+    <path d="M 120 130 Q 80 200 50 190" stroke="#7E22CE" stroke-width="4" />
+    <path d="M 160 170 Q 110 260 40 270" stroke="#7E22CE" stroke-width="4" />
+    <path d="M 200 210 Q 150 310 80 340" stroke="#7E22CE" stroke-width="4" />
+    <!-- Wing Claws -->
+    <polygon points="18,115 30,118 20,126" fill="#FDE047" stroke="#78350F" stroke-width="1.5" />
+  </g>
+
+  <!-- Right Wing -->
+  <g>
+    <!-- Wing Bones -->
+    <path d="M 282 200 C 342 120 422 70 492 120 C 502 140 482 180 462 190 C 492 210 492 250 472 270 C 492 300 472 330 432 340 C 382 330 322 280 282 250 Z" 
+          fill="url(#bossWingGrad)" stroke="#1E1B4B" stroke-width="4" />
+    <path d="M 292 190 Q 372 100 492 120" stroke="#7E22CE" stroke-width="8" stroke-linecap="round" />
+    <path d="M 392 130 Q 432 200 462 190" stroke="#7E22CE" stroke-width="4" />
+    <path d="M 352 170 Q 402 260 472 270" stroke="#7E22CE" stroke-width="4" />
+    <path d="M 312 210 Q 362 310 432 340" stroke="#7E22CE" stroke-width="4" />
+    <!-- Wing Claws -->
+    <polygon points="494,115 482,118 492,126" fill="#FDE047" stroke="#78350F" stroke-width="1.5" />
+  </g>
+
+  <!-- DEMON DRAGON TAIL -->
+  <path d="M 270 380 Q 360 440 380 490 Q 350 495 320 460 Q 280 430 250 410 Z" fill="#991B1B" stroke="#450A0A" stroke-width="3" />
+  <!-- Tail Blade / Spikes -->
+  <polygon points="380,490 415,475 390,460 385,480" fill="#EF4444" stroke="#450A0A" stroke-width="2" />
+  <polygon points="350,450 375,440 355,430" fill="#FDE047" stroke="#78350F" stroke-width="1.5" />
+
+  <!-- DEMON MAIN BODY & TORSO -->
+  <path d="M 170 230 C 150 310 160 390 200 430 C 230 450 282 450 312 430 C 352 390 362 310 342 230 Z" 
+        fill="url(#bossSkinGrad)" stroke="#450A0A" stroke-width="5" />
+
+  <!-- Spiked Demon Shoulder Pauldrons -->
+  <g>
+    <!-- Left Pauldron -->
+    <path d="M 120 220 Q 90 200 80 160 Q 130 170 170 210 Z" fill="url(#bossArmorGrad)" stroke="#64748B" stroke-width="3" />
+    <polygon points="80,160 50,130 85,150" fill="#E2E8F0" stroke="#334155" stroke-width="2" />
+    <polygon points="95,175 75,150 105,170" fill="#E2E8F0" stroke="#334155" stroke-width="2" />
+
+    <!-- Right Pauldron -->
+    <path d="M 392 220 Q 422 200 432 160 Q 382 170 342 210 Z" fill="url(#bossArmorGrad)" stroke="#64748B" stroke-width="3" />
+    <polygon points="432,160 462,130 427,150" fill="#E2E8F0" stroke="#334155" stroke-width="2" />
+    <polygon points="417,175 437,150 407,170" fill="#E2E8F0" stroke="#334155" stroke-width="2" />
+  </g>
+
+  <!-- Chest Distraction Void Core & Ribs -->
+  <!-- Dark Abdomen Plates -->
+  <path d="M 210 270 Q 256 285 302 270 L 295 315 Q 256 330 217 315 Z" fill="#450A0A" stroke="#991B1B" stroke-width="2" />
+  <path d="M 215 320 Q 256 335 297 320 L 290 365 Q 256 380 222 365 Z" fill="#450A0A" stroke="#991B1B" stroke-width="2" />
+  <path d="M 225 370 Q 256 385 287 370 L 280 410 Q 256 420 232 410 Z" fill="#450A0A" stroke="#991B1B" stroke-width="2" />
+
+  <!-- Glowing Void Core (Heart of Distraction) -->
+  <circle cx="256" cy="275" r="32" fill="#0F172A" stroke="#EF4444" stroke-width="3" />
+  <polygon points="256,252 276,275 256,298 236,275" fill="#EF4444" filter="url(#fieryGlow)" />
+  <circle cx="256" cy="275" r="8" fill="#FFFFFF" />
+
+  <!-- DEMON CHIBI HEAD (Large & Intimidating) -->
+  <!-- Head Base -->
+  <path d="M 160 140 C 150 80 200 50 256 50 C 312 50 362 80 352 140 C 352 200 320 235 256 240 C 192 235 160 200 160 140 Z" 
+        fill="url(#bossSkinGrad)" stroke="#450A0A" stroke-width="6" />
+
+  <!-- MASSIVE CURVING DEMON HORNS -->
+  <!-- Left Horn -->
+  <path d="M 180 90 C 150 30 90 20 40 50 C 70 80 120 90 165 115 Z" 
+        fill="url(#bossHornGrad)" stroke="#451A03" stroke-width="4" />
+  <path d="M 110 50 C 120 70 140 85 165 95" stroke="#FDE047" stroke-width="2" fill="none" />
+  <!-- Horn ridges -->
+  <line x1="80" y1="55" x2="90" y2="70" stroke="#78350F" stroke-width="3" />
+  <line x1="110" y1="65" x2="120" y2="82" stroke="#78350F" stroke-width="3" />
+  <line x1="140" y1="78" x2="150" y2="95" stroke="#78350F" stroke-width="3" />
+
+  <!-- Right Horn -->
+  <path d="M 332 90 C 362 30 422 20 472 50 C 442 80 392 90 347 115 Z" 
+        fill="url(#bossHornGrad)" stroke="#451A03" stroke-width="4" />
+  <path d="M 402 50 C 392 70 372 85 347 95" stroke="#FDE047" stroke-width="2" fill="none" />
+  <!-- Horn ridges -->
+  <line x1="432" y1="55" x2="422" y2="70" stroke="#78350F" stroke-width="3" />
+  <line x1="402" y1="65" x2="392" y2="82" stroke="#78350F" stroke-width="3" />
+  <line x1="372" y1="78" x2="362" y2="95" stroke="#78350F" stroke-width="3" />
+
+  <!-- Brow & Snout -->
+  <path d="M 190 115 Q 256 135 322 115 Q 290 100 256 100 Q 222 100 190 115 Z" fill="#7F1D1D" stroke="#450A0A" stroke-width="2" />
+  <!-- Snout / Jaw -->
+  <path d="M 210 160 Q 256 185 302 160 L 290 215 Q 256 230 222 215 Z" fill="#991B1B" stroke="#450A0A" stroke-width="3" />
+  <!-- Nostrils with smoke particles -->
+  <ellipse cx="242" cy="172" rx="4" ry="6" fill="#450A0A" />
+  <ellipse cx="270" cy="172" rx="4" ry="6" fill="#450A0A" />
+
+  <!-- DEMON EYES (Fierce & Glowing) -->
+  <!-- Left Eye Socket & Eye -->
+  <polygon points="185,130 230,138 220,152 188,142" fill="#450A0A" stroke="#7F1D1D" stroke-width="2" />
+  <polygon points="190,132 225,139 218,148 193,141" fill="#FEF08A" filter="url(#fieryGlow)" />
+  <polygon points="200,135 220,140 215,146 202,142" fill="#DC2626" />
+  <circle cx="210" cy="138" r="2.5" fill="#FFFFFF" />
+
+  <!-- Right Eye Socket & Eye -->
+  <polygon points="327,130 282,138 292,152 324,142" fill="#450A0A" stroke="#7F1D1D" stroke-width="2" />
+  <polygon points="322,132 287,139 294,148 319,141" fill="#FEF08A" filter="url(#fieryGlow)" />
+  <polygon points="312,135 292,140 297,146 310,142" fill="#DC2626" />
+  <circle cx="302" cy="138" r="2.5" fill="#FFFFFF" />
+
+  <!-- Sharp Dragon Fangs / Mouth Grin -->
+  <path d="M 220 190 Q 256 205 292 190" stroke="#450A0A" stroke-width="4" fill="none" />
+  <!-- Top Fangs -->
+  <polygon points="230,188 236,202 240,189" fill="#FFFBEB" stroke="#450A0A" stroke-width="1.5" />
+  <polygon points="272,189 276,202 282,188" fill="#FFFBEB" stroke="#450A0A" stroke-width="1.5" />
+  <polygon points="250,192 256,204 262,192" fill="#FFFBEB" stroke="#450A0A" stroke-width="1.5" />
+  <!-- Bottom Fangs -->
+  <polygon points="238,206 244,195 248,206" fill="#FFFBEB" stroke="#450A0A" stroke-width="1.5" />
+  <polygon points="264,206 268,195 274,206" fill="#FFFBEB" stroke="#450A0A" stroke-width="1.5" />
+
+  <!-- DEMONIC CLAWS & FOREARMS -->
+  <!-- Left Arm & Claw -->
+  <g>
+    <path d="M 160 260 Q 120 300 110 370 Q 135 385 155 350 Q 170 310 180 280 Z" fill="url(#bossSkinGrad)" stroke="#450A0A" stroke-width="4" />
+    <path d="M 95 380 C 85 365 110 350 125 360 C 135 340 155 345 150 365 C 165 350 180 365 170 385 Z" fill="#7F1D1D" stroke="#450A0A" stroke-width="2" />
+    <!-- Claws -->
+    <polygon points="90,385 70,400 95,395" fill="#FDE047" stroke="#78350F" stroke-width="2" />
+    <polygon points="115,392 105,415 125,402" fill="#FDE047" stroke="#78350F" stroke-width="2" />
+    <polygon points="145,392 145,418 155,398" fill="#FDE047" stroke="#78350F" stroke-width="2" />
+    <polygon points="170,385 180,405 175,388" fill="#FDE047" stroke="#78350F" stroke-width="2" />
+  </g>
+
+  <!-- Right Arm & Claw (Holding Doom Blade / Dark Smartphone Scepter) -->
+  <g>
+    <path d="M 352 260 Q 392 300 402 370 Q 377 385 357 350 Q 342 310 332 280 Z" fill="url(#bossSkinGrad)" stroke="#450A0A" stroke-width="4" />
+    <path d="M 417 380 C 427 365 402 350 387 360 C 377 340 357 345 362 365 C 347 350 332 365 342 385 Z" fill="#7F1D1D" stroke="#450A0A" stroke-width="2" />
+    <!-- Claws -->
+    <polygon points="422,385 442,400 417,395" fill="#FDE047" stroke="#78350F" stroke-width="2" />
+    <polygon points="397,392 407,415 387,402" fill="#FDE047" stroke="#78350F" stroke-width="2" />
+    <polygon points="367,392 367,418 357,398" fill="#FDE047" stroke="#78350F" stroke-width="2" />
+  </g>
+
+  <!-- Floating Dark Sparks / Embers around Boss -->
+  <circle cx="100" cy="180" r="4" fill="#F87171" filter="url(#fieryGlow)" />
+  <circle cx="70" cy="240" r="3" fill="#FDE047" />
+  <circle cx="430" cy="190" r="5" fill="#F87171" filter="url(#fieryGlow)" />
+  <circle cx="450" cy="270" r="3.5" fill="#C084FC" />
+  <circle cx="256" cy="480" r="6" fill="#EF4444" filter="url(#fieryGlow)" />
+</svg>
